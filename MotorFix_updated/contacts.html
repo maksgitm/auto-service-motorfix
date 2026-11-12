@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Контакты и запись на обслуживание — MotorFix</title>
+  <meta name="description" content="Адрес, телефон, мессенджеры и онлайн‑запись в автосервис MotorFix.">
+  <script src="js/theme.js"></script>
+<!--  <link rel="stylesheet" href="css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body data-page="contacts">
+
+  <!-- Шапка подставляется скриптом js/main.js -->
+  <header class="sticky-top" id="site-header"></header>
+
+  <!-- Хлебные крошки -->
+  <nav aria-label="breadcrumb" class="bg-body-tertiary border-bottom">
+    <div class="container">
+      <ol class="breadcrumb mb-0 py-2">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <div class="bg-black text-white py-5">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Контакты и запись</h1>
+        <p class="lead text-white-50 col-lg-8 mb-0">Оставьте заявку — перезвоним в течение 15 минут в рабочее время.</p>
+      </div>
+    </div>
+
+    <section class="py-5 min-vh-100">
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- Форма записи -->
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Запись на обслуживание</h2>
+            <div class="alert alert-primary">
+              Заявки на сайте принимаем круглосуточно, а по телефону отвечаем только в рабочее время сервиса:
+              Пн–Сб 8:00–21:00, Вс 10:00–18:00.
+            </div>
+            <form id="booking-form" novalidate class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="fn">Ваше имя</label>
+            <input class="form-control" id="fn" placeholder="Иван" maxlength="40" autocomplete="name">
+            <div class="invalid-feedback" id="e-fn"></div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="fp">Телефон</label>
+            <input class="form-control" id="fp" type="tel" placeholder="+7 (912) 345-67-89" maxlength="20" autocomplete="tel">
+            <div class="invalid-feedback" id="e-fp"></div>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="fs">Услуга</label>
+            <select class="form-select" id="fs"></select>
+            <div class="invalid-feedback" id="e-fs"></div>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="fa">Марка и модель авто</label>
+            <input class="form-control" id="fa" placeholder="Toyota Camry" maxlength="60">
+            <div class="invalid-feedback" id="e-fa"></div>
+          </div>
+          <div class="col-6">
+            <label class="form-label" for="fd">Дата визита</label>
+            <input class="form-control" id="fd" type="date">
+            <div class="invalid-feedback" id="e-fd"></div>
+          </div>
+          <div class="col-6">
+            <label class="form-label" for="ft">Время</label>
+            <input class="form-control" id="ft" type="time" step="900">
+            <div class="invalid-feedback" id="e-ft"></div>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="fc">Комментарий</label>
+            <textarea class="form-control" id="fc" rows="3" maxlength="500" placeholder="Что беспокоит? До 500 символов"></textarea>
+            <div class="invalid-feedback" id="e-fc"></div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="fk">
+              <label class="form-check-label" for="fk">Согласен на обработку персональных данных</label>
+              <div class="invalid-feedback" id="e-fk"></div>
+            </div>
+          </div>
+          <div class="col-12 d-grid">
+            <button class="btn btn-primary btn-lg" type="submit">Отправить заявку</button>
+          </div>
+          <div class="col-12">
+            <div id="booking-msg" class="alert alert-primary mb-0" hidden></div>
+          </div>
+            </form>
+          </div>
+
+          <!-- Адрес, карта, электронная почта и соцсети -->
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Как нас найти</h2>
+            <ul class="list-group mb-3">
+              <li class="list-group-item">📍 <b>г. Москва, ул. Автозаводская, 25, стр. 3</b></li>
+              <li class="list-group-item">📞 <a href="tel:+74952174863">+7 (495) 217-48-63</a>
+              <li class="list-group-item">✉ <a href="mailto:info@motorfix.example">info@motorfix.example</a></li>
+              <li class="list-group-item">🕘 Пн–Сб 8:00–21:00, Вс 10:00–18:00</li>
+            </ul>
+            <div class="border rounded overflow-hidden">
+              <iframe
+                title="MotorFix на Яндекс Картах"
+                src="https://yandex.ru/map-widget/v1/?ll=37.632186%2C55.703674&z=17&pt=37.632186%2C55.703674%2Cpm2rdm"
+                width="100%"
+                height="380"
+                frameborder="0"
+                allowfullscreen="allowfullscreen"
+                loading="lazy"
+                style="display:block; border:0;"
+                aria-label="Интерактивная карта с местоположением MotorFix">
+              </iframe>
+            </div>
+            <a class="btn btn-outline-primary btn-sm mt-3" target="_blank" rel="noopener"
+               href="https://yandex.ru/map-widget/v1/?ll=37.632186%2C55.703674&z=17&pt=37.632186%2C55.703674%2Cpm2rdm">
+              Открыть в Яндекс Картах ↗
+            </a>
+            <h3 class="h6 mt-4">Мы в мессенджерах</h3>
+            <div class="d-flex flex-wrap gap-2" data-socials></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-navy">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Как добраться</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="howto"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер подставляется скриптом js/main.js -->
+  <footer class="bg-black text-white-50 pt-5 pb-3" id="site-footer"></footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

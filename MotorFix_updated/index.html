@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MotorFix — автосервис в Москве: диагностика, ТО, ремонт</title>
+  <meta name="description" content="MotorFix — автосервис полного цикла в Москве. Диагностика, ТО, ремонт с гарантией до 24 месяцев.">
+  <script src="js/theme.js"></script>
+<!--  <link rel="stylesheet" href="css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body data-page="home">
+
+  <!-- Шапка подставляется скриптом js/main.js -->
+  <header class="sticky-top" id="site-header"></header>
+
+  <!-- Хлебные крошки -->
+  <nav aria-label="breadcrumb" class="bg-body-tertiary border-bottom">
+    <div class="container">
+      <ol class="breadcrumb mb-0 py-2">
+        <li class="breadcrumb-item active" aria-current="page">Главная</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Экран 1: главный баннер -->
+    <section class="hero text-white min-vh-100 d-flex align-items-center">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-8">
+            <span class="badge rounded-pill border border-primary text-brand mb-3 px-3 py-2">
+              Автосервис полного цикла · Москва
+            </span>
+            <h1 class="display-4 fw-bold">
+              Ремонт, который <span class="text-brand">вы не заметите</span> — кроме ровной работы мотора
+            </h1>
+            <p class="lead text-white-50">
+              MotorFix — диагностика, ТО и ремонт легковых авто с гарантией до 24 месяцев.
+              Прозрачные цены, сертифицированные запчасти, готовность в срок.
+            </p>
+            <div class="d-flex flex-wrap gap-2 my-4">
+              <a class="btn btn-primary btn-lg" href="contacts.html">Записаться на сервис</a>
+              <a class="btn btn-outline-light btn-lg" href="services.html">Каталог услуг</a>
+              <a class="btn btn-outline-light btn-lg" href="diagnostics.html">Как проходит диагностика</a>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-4 g-3 mt-5" id="stats"></div>
+      </div>
+    </section>
+
+    <!-- Экран 2: о сервисе -->
+    <section class="py-5 min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-8">
+            <h2 class="fw-bold">О сервисе MotorFix</h2>
+            <p class="text-body-secondary">
+              Мы работаем с 2014 года и за это время обслужили более 18 000 автомобилей.
+              В команде 14 мастеров с опытом от 8 лет, каждый специализируется на своём направлении:
+              двигатель, ходовая, электрика, кузовные мелочи.
+            </p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item">✓ Согласуем смету до начала работ и ничего не делаем без вашего «да»</li>
+              <li class="list-group-item">✓ Показываем замененные детали и присылаем фото‑ и видеоотчёт</li>
+              <li class="list-group-item">✓ Работаем на оборудовании Bosch и Launch, 8 подъёмников</li>
+              <li class="list-group-item">✓ Даём письменную гарантию до 24 месяцев</li>
+            </ul>
+            <a class="btn btn-primary" href="faq.html">Ответы на частые вопросы</a>
+          </div>
+          <div class="col-lg-4">
+            <img class="about-image" src="https://images.pexels.com/photos/4116231/pexels-photo-4116231.jpeg" alt="Работа в автосервисе" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Почему выбирают нас -->
+    <section class="py-5 bg-body-tertiary">
+      <div class="container">
+        <h2 class="fw-bold">Почему выбирают MotorFix</h2>
+        <p class="text-body-secondary mb-4">Работаем честно: согласуем смету до начала работ и показываем замененные детали.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="features"></div>
+      </div>
+    </section>
+
+    <!-- Популярные услуги -->
+    <section class="py-5 bg-black text-white">
+      <div class="container">
+        <h2 class="fw-bold">Популярные услуги</h2>
+        <p class="text-white-50 mb-4">Самое востребованное — запишитесь в пару кликов.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-body" id="popular"></div>
+        <a class="btn btn-primary mt-4" href="services.html">Все услуги →</a>
+      </div>
+    </section>
+
+    <!-- Как мы работаем -->
+    <section class="py-5 bg-body-tertiary">
+      <div class="container">
+        <h2 class="fw-bold">Как мы работаем</h2>
+        <p class="text-body-secondary mb-4">Четыре простых шага от заявки до выдачи автомобиля.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="steps"></div>
+      </div>
+    </section>
+
+    <!-- Финальный блок (тёмно-синий) -->
+    <section class="py-5 bg-navy">
+      <div class="container text-center col-lg-7 py-5">
+        <h2 class="fw-bold">Не уверены, что сломалось?</h2>
+        <p class="text-white-50">Запишитесь на диагностику — расскажем, что требует внимания, а что подождёт.</p>
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
+          <a class="btn btn-primary btn-lg" href="contacts.html">Записаться на диагностику</a>
+        </div>
+        <p class="text-white-50 mb-2">Или напишите нам в мессенджер:</p>
+        <div class="d-flex justify-content-center flex-wrap gap-2" data-socials></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер подставляется скриптом js/main.js -->
+  <footer class="bg-black text-white-50 pt-5 pb-3" id="site-footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
